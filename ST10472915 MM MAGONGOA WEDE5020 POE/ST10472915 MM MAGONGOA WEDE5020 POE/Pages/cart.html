@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cart | LowWerks VW Suspension</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="catalog.html">Catalog</a></li>
+          <li><a href="guides.html">Guides & FAQ</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="cart.html" aria-current="page">Cart</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Your Shopping Cart</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Coilover Model A</td>
+            <td>1</td>
+            <td>R0</td>
+            <td>R0</td>
+          </tr>
+        </tbody>
+      </table>
+      <button>Checkout</button>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year-cart"></span> LowWerks VW Suspension</p>
+      <script>
+        document.getElementById("year-cart").textContent =
+          new Date().getFullYear();
+      </script>
+    </footer>
+  </body>
+</html>
