@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ | LowWerks VW Suspension</title>
+  <link rel="stylesheet" href="/ST10472915 MM MAGONGOA WEDE5020 POE/Assets/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="logo">Low<span>Werks</span></div>
+    <div class="menu-toggle">&#9776;</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="faq.html" class="active">FAQ</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="cart.html">🛒 Cart (0)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- JS for Hamburger Toggle -->
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+
+
+
+  <!-- FAQ Section -->
+  <section class="faq-page">
+    <h1>Frequently Asked Questions</h1>
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-question">Q: How do I know if this fits my Polo 6R?</button>
+        <div class="accordion-answer">
+          <p>Check the compatibility filter under the catalog section to ensure it fits your model.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-question">Q: Do you ship nationwide?</button>
+        <div class="accordion-answer">
+          <p>Yes, 2–5 business days via courier.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-question">Q: Can I install these myself?</button>
+        <div class="accordion-answer">
+          <p>We provide installation guides, but professional installation is recommended for safety.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-question">Q: Do you accept returns?</button>
+        <div class="accordion-answer">
+          <p>Yes, within 7 days of purchase for unopened products. See our return policy for details.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 LowWerks VW Suspension | Follow us on 
+      <a href="#">Instagram</a> | <a href="#">WhatsApp</a>
+    </p>
+  </footer>
+
+  <!-- Simple Accordion Script -->
+  <script>
+    const acc = document.querySelectorAll(".accordion-question");
+    acc.forEach(button => {
+      button.addEventListener("click", () => {
+        const answer = button.nextElementSibling;
+        button.classList.toggle("active");
+        answer.style.maxHeight = answer.style.maxHeight ? null : answer.scrollHeight + "px";
+      });
+    });
+  </script>
+</body>
+</html>

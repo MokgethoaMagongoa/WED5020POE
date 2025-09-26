@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart | LowWerks VW Suspension</title>
+  <link rel="stylesheet" href="/ST10472915 MM MAGONGOA WEDE5020 POE/Assets/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="logo">Low<span>Werks</span></div>
+    <div class="menu-toggle">&#9776;</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="cart.html" class="active">🛒 Cart (0)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- JS for Hamburger Toggle -->
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+
+
+
+  <!-- Cart Section -->
+  <section class="cart-page">
+    <div class="cart-container">
+      <!-- Cart Table -->
+      <div class="cart-items">
+        <h2>Your Cart</h2>
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Name</th>
+              <th>Quantity</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="cart-thumb"><img src="/ST10472915 MM MAGONGOA WEDE5020 POE/Assets/images/Coilovers4-removebg-preview.png" height="100%"></div></td>
+              <td>Coilover Kit</td>
+              <td>1</td>
+              <td>R6,999</td>
+            </tr>
+            <tr>
+              <td><div class="cart-thumb"><img src="/ST10472915 MM MAGONGOA WEDE5020 POE/Assets/images/Springs1-removebg-preview.png" height="100%"></div></td>
+              <td>Lowering Springs</td>
+              <td>2</td>
+              <td>R3,200</td>
+            </tr>
+            <tr>
+              <td><div class="cart-thumb"><img src="/ST10472915 MM MAGONGOA WEDE5020 POE/Assets/images/Wheel1-removebg-preview.png" height="100%"></div></td>
+              <td>OEM Rims Set</td>
+              <td>1</td>
+              <td>R12,500</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Summary Sidebar -->
+      <div class="cart-summary">
+        <h2>Order Summary</h2>
+        <div class="summary-item">
+          <span>Subtotal</span>
+          <span>R25,899</span>
+        </div>
+        <div class="summary-item">
+          <span>Shipping</span>
+          <span>Free</span>
+        </div>
+        <div class="summary-item total">
+          <span>Total</span>
+          <span>R25,899</span>
+        </div>
+        <button class="btn checkout-btn">Proceed to Checkout</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 LowWerks VW Suspension | Follow us on 
+      <a href="#">Instagram</a> | <a href="#">WhatsApp</a>
+    </p>
+  </footer>
+</body>
+</html>
